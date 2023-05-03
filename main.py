@@ -15,10 +15,10 @@ window.title("Flashy")
 window.config(padx=50, pady=50)
 
 # Canvas Initialization
-canvas = Canvas(width=800, height=526, highlightthickness=)
+canvas = Canvas(width=800, height=526, highlightthickness=0)
 canvas.create_image(400, 263, image=card_front.png)
-canvas.create_text(400, 150, text="Title", font=(FONT_NAME, 40, "italic"))
-canvas.create_text(400, 263, text="Title", font=(FONT_NAME, 60, "bold"))
+title = canvas.create_text(400, 150, text="Title", font=(FONT_NAME, 40, "italic"))
+word = canvas.create_text(400, 263, text="Word", font=(FONT_NAME, 60, "bold"))
 
 # Images
 card_front = PhotoImage(file="images/card_front.png")
