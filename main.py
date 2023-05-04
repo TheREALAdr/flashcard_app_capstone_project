@@ -16,8 +16,8 @@ window.config(padx=50, pady=50, bg=BACKGROUND_COLOR)
 
 # Canvas Initialization
 canvas = Canvas(width=800, height=526, highlightthickness=0, bg=BACKGROUND_COLOR)
-canvas.create_image(400, 263, image=card_front.png)
-title = canvas.create_text(400, 150, text="Title", font=(FONT_NAME, 40, "italic"))
+flashcard = canvas.create_image(400, 263, image=card_front.png)
+language = canvas.create_text(400, 150, text="Language", font=(FONT_NAME, 40, "italic"))
 word = canvas.create_text(400, 263, text="Word", font=(FONT_NAME, 60, "bold"))
 
 # Images
