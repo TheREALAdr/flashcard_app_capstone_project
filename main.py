@@ -22,17 +22,17 @@ word = canvas.create_text(400, 263, text="Word", font=(FONT_NAME, 60, "bold"))
 
 # Images
 card_front_image = PhotoImage(file="images/card_front.png")
-incorrect_image = PhotoImage(file="images/incorrect.png")
-correct_image = PhotoImage(file="images/correct.png")
+red_x_image = PhotoImage(file="images/incorrect.png")
+green_check_image = PhotoImage(file="images/correct.png")
 
 
 # Buttons
-incorrect_button = Button(image=incorrect_image, highlightthickness=0)
-correct_button = Button(image=correct_image, highlightthickness=0)
+unknown_button = Button(image=red_x_image, highlightthickness=0)
+known_button = Button(image=green_check_image, highlightthickness=0)
 
 # Adding elements to the grid
-incorrect_button.grid(column=0, row=1, sticky=EW)
-correct_button.grid(column=1, row=1, sticky=EW)
+unknown_button.grid(column=0, row=1, sticky=EW)
+known_button.grid(column=1, row=1, sticky=EW)
 canvas.grid(column=0, row=0, columnspan=2)
 
 window.mainloop()
