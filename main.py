@@ -34,3 +34,5 @@ correct_button = Button(image=correct_image, highlightthickness=0)
 incorrect_button.grid(column=0, row=1, sticky=EW)
 correct_button.grid(column=1, row=1, sticky=EW)
 canvas.grid(column=0, row=0, columnspan=2)
+
+window.mainloop()
