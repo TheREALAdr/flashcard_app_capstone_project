@@ -5,7 +5,7 @@ from tkinter.ttk import *
 # ------------------------------- CONSTANTS ------------------------------- #
 
 BACKGROUND_COLOR = "#B1DDC6"
-FONT_NAME = "Ariel"
+FONT_NAME = "Arial"
 
 # ------------------------------ USER INTERFACE ----------------------------- #
 
