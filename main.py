@@ -27,8 +27,8 @@ green_check_image = PhotoImage(file="images/correct.png")
 
 
 # Buttons
-unknown_button = Button(image=red_x_image, highlightthickness=0)
-known_button = Button(image=green_check_image, highlightthickness=0)
+unknown_button = Button(image=red_x_image, highlightthickness=0, activebackground=BACKGROUND_COLOR, borderwidth=0)
+known_button = Button(image=green_check_image, highlightthickness=0, activebackground=BACKGROUND_COLOR, borderwidth=0)
 
 # Adding elements to the grid
 unknown_button.grid(column=0, row=1, sticky=EW)
