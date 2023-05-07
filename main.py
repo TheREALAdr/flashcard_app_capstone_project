@@ -2,6 +2,12 @@ from tkinter import *
 from tkinter.ttk import *
 
 
+# ------------------------------ FLASHCARD GENERATION --------------------- #
+
+with open(file=data/french_words.csv) as data_file:
+    pass
+# BASE CODE; WILL NEED TO EDIT LATER
+
 # ------------------------------- CONSTANTS ------------------------------- #
 
 BACKGROUND_COLOR = "#B1DDC6"
