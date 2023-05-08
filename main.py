@@ -1,11 +1,13 @@
 from tkinter import *
 from tkinter.ttk import *
+from pandas import *
 
 
 # ------------------------------ FLASHCARD GENERATION --------------------- #
 
-with open(file=data/french_words.csv) as data_file:
-    pass
+with open(file=data/french_words.csv) as words_file:
+    words_data = pandas.read_csv(words_file)
+# Finished moving data to .csv file (you can work with it now)! Try using Dataframe.to_dict(orient=words_data) later on.
 # BASE CODE; WILL NEED TO EDIT LATER
 
 # ------------------------------- CONSTANTS ------------------------------- #
