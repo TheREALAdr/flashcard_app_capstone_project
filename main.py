@@ -14,7 +14,7 @@ import random
 BACKGROUND_COLOR = "#B1DDC6"
 FONT_NAME = "Arial"
 
-# ------------------------------ FLASHCARD GENERATION --------------------- #
+# ------------------------------ WORD GENERATION --------------------- #
 
 with open(file=data/french_words.csv) as words_file:
     words_data = DataFrame(words_file)
