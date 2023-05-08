@@ -6,9 +6,13 @@ from pandas import *
 # ------------------------------ FLASHCARD GENERATION --------------------- #
 
 with open(file=data/french_words.csv) as words_file:
-    words_data = pandas.read_csv(words_file)
-# Finished moving data to .csv file (you can work with it now)! Try using Dataframe.to_dict(orient=words_data) later on.
-# BASE CODE; WILL NEED TO EDIT LATER
+    words_data = DataFrame(words_file)
+    dict_of_words = words_data.to_dict(orient="records")
+# ^^ Lines directly above should make a variable called "dict_of_words" 
+#    that is a dictionary form of french_words.csv. You might want to make
+#.   words_data only include the French side of french_words.csv later, but 
+#.   run in an IDE later to check it out.
+    
 
 # ------------------------------- CONSTANTS ------------------------------- #
 
