@@ -3,6 +3,16 @@ from tkinter.ttk import *
 from pandas import *
 import random
 
+# This project currently only works with French and English. Later on, see if you can add
+# functionality that lets you grab 100 most popular words of ANY language from
+# Wikipedia once a user types a valid language they want to learn. After that, 
+# it should be converted to a .CSV and be ready for use with this program.
+# Challenge is yours for the taking. You up?
+
+# ------------------------------- CONSTANTS ------------------------------- #
+
+BACKGROUND_COLOR = "#B1DDC6"
+FONT_NAME = "Arial"
 
 # ------------------------------ FLASHCARD GENERATION --------------------- #
 
@@ -11,14 +21,12 @@ with open(file=data/french_words.csv) as words_file:
     dict_of_words = words_data.to_dict(orient="records")
 # ^^ Lines directly above should make a variable called "dict_of_words" 
 #    that is a dictionary form of french_words.csv. You might want to make
-#.   words_data only include the French side of french_words.csv later, but 
-#.   run in an IDE later to check it out.
-    
+#    words_data only include the French side of french_words.csv later, but 
+#    run in an IDE later to check it out.
+random_word = dict_of_words[random.randint(1, 101)]
+foreign_translation = random_word[”French”]
+known_translation = random_word[”English”]
 
-# ------------------------------- CONSTANTS ------------------------------- #
-
-BACKGROUND_COLOR = "#B1DDC6"
-FONT_NAME = "Arial"
 
 # ------------------------------ USER INTERFACE ----------------------------- #
 
