@@ -1,6 +1,7 @@
 from tkinter import *
 from tkinter.ttk import *
 from pandas import *
+import random
 
 
 # ------------------------------ FLASHCARD GENERATION --------------------- #
