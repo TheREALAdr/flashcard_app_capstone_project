@@ -27,6 +27,10 @@ random_word = dict_of_words[random.randint(1, 101)]
 foreign_translation = random_word[”French”]
 known_translation = random_word[”English”]
 
+def generate_foreign_word():
+    canvas.itemconfig(language, text="French")
+    canvas.itemconfig(word, text=f"{foreign_translation}")
+    
 
 # ------------------------------ USER INTERFACE ----------------------------- #
 
@@ -48,7 +52,7 @@ green_check_image = PhotoImage(file="images/correct.png")
 
 
 # Buttons
-unknown_button = Button(image=red_x_image, highlightthickness=0, activebackground=BACKGROUND_COLOR, borderwidth=0)
+unknown_button = Button(image=red_x_image, command=generate_foreign_word, highlightthickness=0, activebackground=BACKGROUND_COLOR, borderwidth=0)
 known_button = Button(image=green_check_image, highlightthickness=0, activebackground=BACKGROUND_COLOR, borderwidth=0)
 
 # Adding elements to the grid
