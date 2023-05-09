@@ -23,15 +23,17 @@ with open(file=data/french_words.csv) as words_file:
 #    that is a dictionary form of french_words.csv. You might want to make
 #    words_data only include the French side of french_words.csv later, but 
 #    run in an IDE later to check it out.
-random_word = dict_of_words[random.randint(1, 101)]
-foreign_translation = random_word[”French”]
-known_translation = random_word[”English”]
 
 def generate_foreign_word():
+    random_word = dict_of_words[random.randint(1, 101)]
+    foreign_translation = random_word[”French”]
+    known_translation = random_word[”English”]
     canvas.itemconfig(language, text="French")
     canvas.itemconfig(word, text=f"{foreign_translation}")
     
-
+# known_translation is currently a useless variable, but
+# keeping here as a building block for a function where
+# I’ll need it. Will probably delete it soon.
 # ------------------------------ USER INTERFACE ----------------------------- #
 
 # Window Initialization
