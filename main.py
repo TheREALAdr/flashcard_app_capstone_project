@@ -19,12 +19,9 @@ FONT_NAME = "Arial"
 with open(file=data/french_words.csv) as words_file:
     words_data = DataFrame(words_file)
     dict_of_words = words_data.to_dict(orient="records")
-# ^^ Lines directly above should make a variable called "dict_of_words" 
-#    that is a dictionary form of french_words.csv. You might want to make
-#    words_data only include the French side of french_words.csv later, but 
-#    run in an IDE later to check it out.
 
 def generate_foreign_word():
+    global random_word
     random_word = dict_of_words[random.randint(1, 101)]
     foreign_translation = random_word[”French”]
     known_translation = random_word[”English”]
@@ -34,6 +31,9 @@ def generate_foreign_word():
 # known_translation is currently a useless variable, but
 # keeping here as a building block for a function where
 # I’ll need it. Will probably delete it soon.
+
+# Also, see if you can use random_eotd later on WITHOUT 
+# needing the global designation.
 # ------------------------------ USER INTERFACE ----------------------------- #
 
 # Window Initialization
