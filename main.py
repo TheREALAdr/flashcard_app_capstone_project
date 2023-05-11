@@ -1,6 +1,6 @@
 from tkinter import *
 from tkinter.ttk import *
-from pandas import *
+import pandas
 import random
 
 # This project currently only works with French and English. Later on, see if you can add
@@ -17,12 +17,12 @@ FONT_NAME = "Arial"
 # ------------------------------ WORD GENERATION --------------------- #
 
 with open(file=data/french_words.csv) as words_file:
-    words_data = DataFrame(words_file)
+    words_data = pandas.read_csv()
     dict_of_words = words_data.to_dict(orient="records")
 
 def generate_foreign_word():
     global random_word
-    random_word = dict_of_words[random.randint(1, 101)]
+    random_word = random.choice(dict_of_words)
     foreign_translation = random_word[”French”]
     known_translation = random_word[”English”]
     canvas.itemconfig(language, text="French")
