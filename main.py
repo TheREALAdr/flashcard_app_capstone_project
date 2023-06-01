@@ -7,7 +7,7 @@ import csv
 # functionality that lets you grab 100 most popular words of ANY language from
 # Wikipedia once a user types a valid language they want to learn. After that, 
 # it should be converted to a .CSV and be ready for use with this program.
-# Challenge is yours for the taking. You up?
+# Challenge is yours for the taking. You up for it?
 
 # ------------------------------- CONSTANTS ------------------------------- #
 
