@@ -52,7 +52,7 @@ def generate_and_remove_words():
     try:
         dict_of_words.remove(current_word)
         words_to_learn = pandas.DataFrame(data=dict_of_words)
-        words_to_learn.to_csv("words_to_learn.csv", index=False)
+        words_to_learn.to_csv("data/words_to_learn.csv", index=False)
         # Might be a simpler way to do this, check the pandas.Dataframe.to_csv() method later.
     except ValueError:
         pass
